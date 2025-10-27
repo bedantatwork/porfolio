@@ -225,33 +225,6 @@ workCards.forEach((card) => {
   });
 });
 
-// Nav link hover animation
-const navLinks = document.querySelectorAll(".nav_link");
-
-navLinks.forEach((link) => {
-  link.addEventListener("mouseenter", () => {
-    navLinks.forEach((otherLink) => {
-      if (otherLink !== link) {
-        gsap.to(otherLink, {
-          opacity: 0.6,
-          duration: 0.3,
-          ease: "power2.out"
-        });
-      }
-    });
-  });
-
-  link.addEventListener("mouseleave", () => {
-    navLinks.forEach((otherLink) => {
-      gsap.to(otherLink, {
-        opacity: 1,
-        duration: 0.3,
-        ease: "power2.out"
-      });
-    });
-  });
-});
-
 
 //process animatoin
 // Process card door animation
